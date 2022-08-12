@@ -17,7 +17,7 @@ const io = new Server(srv, {
 io.on('connection', client =>{
   console.log('new client connected! na porta ' +PORT)
 })
-
+const a = 3
 
 // const io = require("socket.io")(PORT, {
 //   cors: {
@@ -54,6 +54,7 @@ io.to(user.socketId).emit('getMessage',{
 })
   })
   //when disconnect
+  
 socket.on('disconnect',()=>{
     console.log('use disconect')
     removeUser(socket.id)
