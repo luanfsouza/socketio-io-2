@@ -24,7 +24,7 @@ io.on('connection', client =>{
 //     origin: "*",
 //   },
 // });
-
+let a = 2
 let users = []
 const addUser = (userId, socketId)=>{
     !users.some(user=>user.userId == userId) && users.push({userId, socketId})
